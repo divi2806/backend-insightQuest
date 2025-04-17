@@ -27,7 +27,7 @@ app.add_middleware(
 
 # Initialize Firebase Admin SDK
 try:
-    service_account_path = "serviceAccountKey.json"
+    service_account_path = "/mnt/account/service1"
     cred = credentials.Certificate(service_account_path)
     firebase_admin.initialize_app(cred)
     db = firestore.client()
